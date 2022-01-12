@@ -1,0 +1,235 @@
+/* -----------RESET CSS-------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----MY CSS ----*/
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* ----MOBILE FIRST----*/
+
+/* ----GENERAL----*/
+body{
+	background-color: hsl(204, 43%, 93%);
+
+}
+
+h2 {
+
+	font-family: 'Karla', sans-serif;
+    font-size: large;
+	color: hsl(179, 62%, 43%);
+	opacity: 80%;
+}
+
+h3 {
+	font-size: 20 px;
+	font-family: 'Karla', sans-serif;
+}
+
+p {
+	font-size: 16 px;
+	font-family: 'Karla', sans-serif;
+}
+
+
+.container {
+    margin: 50px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(58, 53, 53, 0.774) 0px 0px 10px;
+
+    max-width: 630px;
+}
+
+/* ----CARD 1----*/
+.card_1 {
+	background-color: white;
+    padding: 20px;
+    border-radius: 20px 20px 0 0;
+
+}
+.card_1 h3 {
+	color: hsl(71, 73%, 54%);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.card_1 p {
+	color: grey;
+    margin-top: 5px;
+}
+
+/* ----BOTTOM----*/
+.plan {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----CARD 2----*/
+.card_2 {
+	background-color: hsl(179, 62%, 43%);
+	color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.card_2 h3 {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-style: bold;
+}
+
+.card_2 span {
+    font-size: 16 px;
+	font-family: 'Karla', sans-serif;
+}
+
+.price {
+
+	font-family: 'Karla', sans-serif;
+    font-size: 30px;
+}
+
+.time {
+	opacity: 50%;
+}
+
+.card_2 p {
+    margin-top: 5px;
+}
+
+
+.card_2 a {
+	background-color: hsl(71, 73%, 54%);
+	color: white;
+    font-size: 16 px;
+	font-family: 'Karla', sans-serif;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(58, 53, 53, 0.774) 0px 0px 10px;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card_2 a:hover {
+    background-color: hsl(71, 92%, 50%);
+}
+
+/* ----CARD 3----*/
+.card_3 {
+	background-color: hsl(179, 62%, 43%);
+	color: white;
+	opacity: 75%;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+
+}
+.card_3 h3 {
+	color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+li {
+	opacity: 70%;
+    font-size: 16 px;
+	font-family: 'Karla', sans-serif;
+}
+
+
+/* ----DESKTOP VERSION----*/
+@media screen and (min-width: 600px) {
+
+    body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        border-radius: 10px;
+    }
+
+    .plan {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .card_2 {
+        width: 50%;
+        border-radius: 0 0 0 10px;
+    }
+
+    .card_3 {
+        width: 50%;
+        border-radius: 0 0 10px 0;
+    }
+}
